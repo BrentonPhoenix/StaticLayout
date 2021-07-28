@@ -3,16 +3,26 @@
     
 }
 
+
+#video {
+    position: relative;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    object-fit: fills;
+}
+
 a {
     color: white;
     text-decoration: none;
 
 }
 
-
-.ipsum {
-    font-size: xx-large;
-}
 
 #banner {
     width: 100%;
@@ -24,7 +34,7 @@ a {
     top: 0px;
     left: 0px;
     text-align: center;
-    font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";;
+    font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     font-size: 13px;
     letter-spacing: .025em;
 }
@@ -33,16 +43,18 @@ a {
     height: 28px;
     width: 80px;
     z-index: inherit;
-    border-radius: 5%;
+    border-radius: 6%;
     background-color: #36394F ;
     position: fixed ;
-    padding-top: -2px;
-    padding-bottom: 6px;
-    top: 2px;
-    right: 460px;
+    top: 10px;
+    right: 430px;
     text-align: center;
     font-family: inherit;
-    color:white
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     }
 #logo {
 
@@ -50,13 +62,14 @@ a {
     padding-right: 12.5px;
     padding-bottom: 12.5px;
     padding-left: 15px ;
-    width: 47px;
+    width: 43px;
     height:  47px;
-    background-color: crimson;
+    background-color: #e33e42;
+    z-index: 9999;
 }
 nav {
 
-    width: 100%;
+    width: 80%;
     height: 72px;
     background-color: #33343A  ;
     position:fixed;
@@ -64,6 +77,7 @@ nav {
     left: 0px;
     margin: 0px;
     padding: 0px;
+    z-index: 9999;
 }
 
 a {
@@ -76,11 +90,73 @@ a {
     height: 60px;
     z-index: inherit;
     position:absolute;
-    top:7px;
-    left: 80px;
+    top:6px;
+    left: 90px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    letter-spacing: .025em;
+    font-size: 19px;
+    /* letter-spacing: .025em; */
     text-decoration: none;
+}
+
+#xToClose {
+    position:fixed;
+    z-index: inherit;
+    top: -15px;
+    right: 7px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    -webkit-text-stroke: 1px #626159;
+    -webkit-text-fill-color: #626159;
+}
+
+
+
+.nav { 
+    color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#downArrowScroll{
+    position: relative;;
+    height: 50px;
+    width: 50px;
+    top: -250px;
+    right: -910px;
+    background-color: rgb(120, 109, 109);
+    border-radius: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+ul {
+    color: transparent;
+}
+
+#courseInformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CI{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#titleCI{
+    display: flex;
+    justify-content: center;
+    color: rgb(43, 135, 174);
+    font-size: 42pt;
+    font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    letter-spacing: .1em;
 }
